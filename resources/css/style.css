@@ -4,6 +4,7 @@ html {
   color: seashell;
   background-color: black;
   opacity:0.9;
+  text-align: center;
 }
 
 header {
@@ -15,6 +16,7 @@ header {
   width: 100%;
   border-bottom: 1px solid seashell;
   background-color: black;
+  margin: 0;
 }
 
 .flex-section {
@@ -25,7 +27,6 @@ header {
 }
 
 header img {
-  display: inline-flex;
   height: 50px;
   padding-left: 10px;
   opacity: 0.9;
@@ -47,7 +48,6 @@ a {
 }
 
 .main-content {
-  display: flex;
   width: 1200px;
   padding-top: 69px;
   justify-content: center;
@@ -61,7 +61,7 @@ a {
   background-image: url("./../images/mission-background.jpg");
   background-size: cover;
   width: 1200px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -70,6 +70,7 @@ a {
 .words {
   background-color: black;
   text-align: center;
+  opacity:0.9;
 }
 
 #featured {
@@ -78,6 +79,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .tile {
@@ -93,6 +95,52 @@ a {
 }
 
 .tile span {
-  display: block;
+  display: flex;
   padding: 5px;
+  justify-content: center;
+}
+
+h2 {
+  padding: 10px;
+  display: block;
+  margin: 0px;
+}
+
+#location {
+  height: 500px;
+  background-image: url("./../images/locations-background.jpg");
+  background-size: cover;
+  width: 1200px;
+  margin-bottom: 40px;
+  justify-content: space-around;
+  display: block;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.location {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  margin: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flex-section.locations {
+  width: 1200px;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 15px;
+}
+
+.contact {
+  height: 200px;
+  display: block;
+}
+
+.footer {
+  text-align: left;
+  padding-left: 20px;
 }
